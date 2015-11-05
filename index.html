@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Gráfico FlexBox</title>
+</head>
+<body>
+	<h2 id="titulo">Grafico com Flexbox</h2>
+	<div class="cont">
+<div class="add"><a id="add" class="btn-floating btn-large waves-effect waves-light pink lighten-1 modal-trigger " href="#modal2"  ><i class="fa fa-plus"></i></a></div>
+
+
+<div class="cfg"><a id="cfg" class="btn-floating btn-large waves-effect waves-light pink lighten-1 modal-trigger " href="#modal1"  ><i class="fa fa-cogs"></i></a></div>
+		<div class="container-grafico">
+	
+		</div>
+		
+		<div class="x" id="labelX">Linha x</div>
+		<div class="y" id="labelY">Linha y</div>
+
+	</div>
+
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Configurações do Gráfico</h4>
+      <input type="text" id="tituloCfg" placeholder="Titulo do gráfico">
+      <input type="text" id="larguraCfg" placeholder="Largura em px do gráfico">
+      <input type="text" id="linhaX" placeholder="Eixo x">
+      <input type="text" id="linhaY" placeholder="Eixo Y">
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+
+  <!-- Modal Structure -->
+  <div id="modal2" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Digite a altura da coluna</h4>
+     
+		<form action="#" id="formAdd">
+    <p class="range-field">
+      <input type="number" id="alturaBarAdd" min="0" max="100" />
+    </p>
+  </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat" id="addBar">Concluir e adicionar</a>
+    </div>
+  </div>
+
+  
+
+	<script src="js/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
