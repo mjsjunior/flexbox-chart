@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 
    $('#larguraCfg').keyup(function(){
-   		$('.cont').css('width',$(this).val()+'px')
+   		$('.cont').css('max-width',$(this).val()+'px')
    })
 
 
@@ -72,8 +72,18 @@ function grafico(){
 
 function addBar(){
 		altura = $('#alturaBarAdd').val();
+		 if(altura == 0)
+            	altura = 2;
+
+             if(altura > 100)
+            	altura = 100;
+
+             if(altura < 0)
+            	altura = 0;
+
 		html = '<div class="bar" data-height="'+altura+'"></div>'
 		$('#alturaBarAdd').val('');
 		$('.container-grafico').append(html);
+		$('.container-grafico').scrollLeft(9999);
 		grafico();
 }

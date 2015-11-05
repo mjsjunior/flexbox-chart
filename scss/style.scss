@@ -20,28 +20,33 @@ h2{
 		font-family: 'Oleo script'
 	}
 .cont{
-
+	
 	margin:0 auto;
-	width:600px;
+	max-width:600px;
 	background:#fff;
 	position: relative;
+	min-width:320px;
 	padding:35px 25px;
 	box-shadow:4px 4px 5px rgba(0,0,0,.3);
 }
 .container-grafico{
+	overflow-x: scroll;
 	border-left:1px solid#ddd;
 	display:-webkit-flex;
 	display:-ms-flexbox;
 	display:flex;
-	-webkit-flex-flow:row wrap;
-	    -ms-flex-flow:row wrap;
-	        flex-flow:row wrap;
+	-webkit-flex-flow:row nowrap;
+	    -ms-flex-flow:row nowrap;
+	        flex-flow:row nowrap;
+
 	
 	
-	height: 350px;
+	height: 380px;
 }
 
 .bar{
+	 flex:none;
+        -webkit-flex:none;
 	transition:all 0.5s;
 	width:50px;
 	cursor:pointer;
@@ -58,7 +63,6 @@ h2{
 		width:100%;
 		text-align:center;
 		margin-top:-20px;
-	
 	}
 
 
@@ -104,6 +108,6 @@ h2{
 
 .modal-content
 {
-	width:600px;;
+	max-width:600px;;
 	margin:0 auto;
 }
