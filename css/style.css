@@ -23,7 +23,7 @@ h2 {
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3); }
 
 .container-grafico {
-  overflow-x: scroll;
+  overflow-x: auto;
   border-left: 1px solid #ddd;
   display: -webkit-flex;
   display: -ms-flexbox;
